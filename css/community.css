@@ -1,0 +1,175 @@
+/* ============ COMMUNITY ============ */
+
+.intro-paragraph {
+  max-width: 68ch;
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
+}
+
+/* accordion, a bordered card per section, one accent color throughout */
+.accordion-item {
+  background: var(--paper-raised);
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--indigo);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: var(--tint);
+  border: none;
+  border-bottom: 1px solid var(--tint-border);
+  text-align: left;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--ink);
+  transition: background 0.15s ease;
+}
+
+.accordion-trigger[aria-expanded="false"] {
+  border-bottom-color: transparent;
+}
+
+.accordion-trigger .accordion-icon {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--indigo);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-panel-inner {
+  padding: 1.25rem 1.5rem 1.75rem;
+}
+
+/* leadership table */
+.role-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+  align-items: baseline;
+}
+
+.role-row:first-child {
+  border-top: none;
+}
+
+.role-row .role-title {
+  font-weight: 600;
+}
+
+.role-row .role-title.is-founder {
+  color: var(--indigo);
+}
+
+.role-row .role-org-name {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.role-row .role-when {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .role-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .role-row .role-when {
+    text-align: left;
+  }
+}
+
+.role-detail {
+  grid-column: 1 / -1;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  max-width: 62ch;
+  margin: 0.5rem 0 0;
+}
+
+.role-detail .meta {
+  display: block;
+  margin-top: 0.4em;
+}
+
+/* global advocacy entries */
+.advocacy-entry {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.advocacy-entry:first-child {
+  border-top: none;
+}
+
+.advocacy-entry h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.15em;
+}
+
+.advocacy-entry .advocacy-meta {
+  display: block;
+  margin-bottom: 0.6em;
+}
+
+/* speaking table */
+.speaking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.speaking-table th {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+  text-align: left;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.speaking-table td {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+
+.speaking-table td:last-child {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
