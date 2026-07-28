@@ -1,0 +1,35 @@
+/* ============ RESOURCES ============ */
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.resource-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+.resource-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
