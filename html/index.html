@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saratou Bako Bagassa</title>
+  <meta name="description" content="Portfolio of Saratou Bako Bagassa, Computer Science and Economics student building software, analyzing data, and organizing for gender equity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Saratou Bako Bagassa</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-resume-btn" href="../assets/resume.pdf" target="_blank" rel="noopener">Download Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">Berea, Kentucky</span>
+        <h1>Saratou Bako Bagassa</h1>
+        <p class="hero-tagline">
+          Computer Science and Economics student. I am a
+          <span class="typewriter-word" id="typewriter-word"></span>
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Software Development</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Community Leadership</span>
+        </div>
+      </div>
+      <div class="headshot">
+        <div class="headshot-frame">
+         <img src="../assets/photo.jpg" alt="Saratou Bako Bagassa"> -->
+
+        </div>
+        <span class="meta headshot-caption">Niamey &rarr; Berea, KY</span>
+      </div>
+    </section>
+
+    <!-- ROUTE SIGNATURE ELEMENT -->
+    <section class="route container" aria-label="Places I have studied and worked">
+      <span class="meta route-label">a path so far</span>
+      <svg viewBox="0 0 800 130" role="img" aria-label="Route from Niamey to Johannesburg to Cape Town to Berea">
+        <path class="route-path" d="M60,70 Q170,10 280,40 Q390,70 500,85 Q620,100 740,55"></path>
+
+        <g class="route-point">
+          <circle cx="60" cy="70" r="5"></circle>
+          <text x="60" y="98" text-anchor="middle">Niamey, Niger</text>
+          <text class="route-year" x="60" y="112" text-anchor="middle">home</text>
+        </g>
+
+        <g class="route-point">
+          <circle cx="280" cy="40" r="5"></circle>
+          <text x="280" y="20" text-anchor="middle">Johannesburg, SA</text>
+          <text class="route-year" x="280" y="6" text-anchor="middle">African Leadership Academy</text>
+        </g>
+
+        <g class="route-point">
+          <circle cx="500" cy="85" r="5"></circle>
+          <text x="500" y="113" text-anchor="middle">Cape Town, SA</text>
+          <text class="route-year" x="500" y="127" text-anchor="middle">Take Action Lab</text>
+        </g>
+
+        <g class="route-point is-current">
+          <circle cx="740" cy="55" r="6"></circle>
+          <text x="740" y="35" text-anchor="middle">Berea, Kentucky</text>
+          <text class="route-year" x="740" y="21" text-anchor="middle">here now</text>
+        </g>
+      </svg>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-border-top container reveal" id="section-about" data-rail-label="About">
+      <div class="about-grid">
+        <div>
+          <span class="eyebrow">01 &middot; About</span>
+          <h2>Who I am</h2>
+        </div>
+        <div>
+          <p class="dropcap">
+            I am an international student from Niger who found Computer Science almost by accident.
+            My first exposure was an Intro to Robotics class during my first semester at Berea, in a
+            field I had once assumed was out of reach because of gender stereotypes back home. I have
+            been hooked ever since, and I now split my technical energy between the Student Software
+            Development Team and projects outside of the classroom.
+          </p>
+          <p>
+            But service has always been the throughline of my life, long before code was. Growing up in
+            Niger, I watched child marriage affect girls I knew, their health, their ability to stay in
+            school, and eventually understood that the deeper issue was not the practice itself but the
+            gender inequity underneath it, showing up in different forms across the community. That is
+            part of why I added Economics as a second major. Working on policy papers and representing
+            my school at Model African Union showed me how much impact policy has on people who never
+            get a say in shaping it.
+          </p>
+          <p>
+            I am working toward using technology, economics, and nonprofit experience together, to help
+            design systems and policies that are more inclusive and to help people from marginalized
+            backgrounds reach their full potential.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section-alt section-border-top reveal" id="section-education" data-rail-label="Education">
+     <div class="container">
+      <span class="eyebrow">02 &middot; Education</span>
+      <h2>Four schools, one thread</h2>
+
+      <div class="edu-list">
+        <div class="edu-item">
+          <div class="edu-dates">Aug 2024 &ndash; May 2028</div>
+          <div>
+            <h3>Berea College</h3>
+            <span class="edu-org">B.A. Computer Science &amp; Economics, Data Analysis concentration &middot; GPA 3.94/4.00</span>
+            <p>Relevant coursework: Software Design and Implementation, Data Structures and Algorithms,
+              Discrete Math, Applied Statistics, Principles of Microeconomics, Scalable Algorithms and
+              Objects, Game Theory, Intermediate Macroeconomics.</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-dates">Spring 2024</div>
+          <div>
+            <h3>Take Action Lab, Tilting Futures</h3>
+            <span class="edu-org">Cape Town, South Africa</span>
+            <p>Human rights&ndash;focused semester program: systems thinking, self-awareness, intercultural
+              competence, human rights coursework, and a community apprenticeship. Served as a student
+              residence leader for my cohort house.</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-dates">Aug 2021 &ndash; Jun 2023</div>
+          <div>
+            <h3>African Leadership Academy</h3>
+            <span class="edu-org">Johannesburg, South Africa &middot; $60,600 financial award (4% acceptance rate)</span>
+            <p>Two-year pre-university program combining Cambridge International A-Levels (Mathematics,
+              Biology, French) with ALA's Entrepreneurial Leadership, African Studies, and Writing and
+              Rhetoric curriculum.</p>
+            <p class="edu-roles">While there: English for Excellence Tutor (supported 16 peers) &middot;
+              Peer Counselor (emotional support for assigned first-year students) &middot; Head of Sales,
+              student enterprise "Footprints"</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-dates">2016 &middot; 2017 &middot; 2020</div>
+          <div>
+            <h3>Collège/Lycée Mariama</h3>
+            <span class="edu-org">Niamey, Niger</span>
+            <p class="edu-roles">Class leader for 3 years.</p>
+          </div>
+        </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- HIGHLIGHTS + FOCUS -->
+    <section class="section section-border-top container reveal" id="section-highlights" data-rail-label="Highlights">
+      <div class="two-col">
+        <div>
+          <span class="eyebrow">03 &middot; Featured</span>
+          <h2>Highlights</h2>
+          <ul class="highlight-list">
+            <li>Founder of Relvox</li>
+            <li>Data Science Intern, DSPG at Virginia Tech</li>
+            <li>Girls First Fund, Changemakers Council Member</li>
+            <li>4&times; Dean's List, Berea College</li>
+          </ul>
+        </div>
+        <div>
+          <div class="focus-card">
+            <span class="eyebrow">Right now</span>
+            <h2 style="color:#fff;">Current focus</h2>
+            <ul>
+              <li>Team Lead, Berea College Software Development</li>
+              <li>Teaching Assistant, Data Structures &amp; Algorithms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-inner">
+      <span class="footer-note">&copy; <span id="year"></span> Saratou Bako Bagassa</span>
+      <div class="footer-links">
+        <a href="mailto:bakobagassasaratou@gmail.com">Email</a>
+        <a href="https://github.com/bakobagassas" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

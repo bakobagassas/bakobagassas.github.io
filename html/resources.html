@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — Saratou Bako Bagassa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/resources.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Saratou Bako Bagassa</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-resume-btn" href="../assets/resume.pdf" target="_blank" rel="noopener">Download Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="page-head" style="padding: clamp(2.5rem, 6vw, 4rem) 0 2.5rem;">
+      <span class="eyebrow">Resources</span>
+      <h1>Things I am building to help other people</h1>
+      <p>Guides and roadmaps for CS students, international students, and anyone navigating a similar
+        path. Everything below is on its way.</p>
+    </div>
+
+    <div class="resource-grid">
+
+      <div class="card resource-card" data-soon>
+        <h3>CS Study Guides</h3>
+        <p>How I study for Computer Science classes.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+      <div class="card resource-card" data-soon>
+        <h3>Economics Study Guides</h3>
+        <p>Notes and study strategies from my Economics coursework.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+      <div class="card resource-card" data-soon>
+        <h3>Data Structures Help</h3>
+        <p>A survival guide, written while TA-ing the course.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+      <div class="card resource-card" data-soon>
+        <h3>Internship Prep</h3>
+        <p>How to find, apply for, and prepare for a technical internship.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+      <div class="card resource-card" data-soon>
+        <h3>Résumé &amp; GitHub Tips</h3>
+        <p>What I would tell a friend building their first developer résumé.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+      <div class="card resource-card" data-soon>
+        <h3>Beginner Tech Roadmap</h3>
+        <p>A milestone path mirroring my own journey: Year 1, a language and Git; Year 2, real projects
+          and clubs; Year 3, internship prep and networking.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+      <div class="card resource-card" data-soon>
+        <h3>International Student Roadmap</h3>
+        <p>Visa and CPT/OPT basics, scholarship search, building a network from scratch, and adapting a
+          résumé for US recruiters.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+      <div class="card resource-card" data-soon>
+        <h3>Templates</h3>
+        <p>Reusable templates, details coming.</p>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-inner">
+      <span class="footer-note">&copy; <span id="year"></span> Saratou Bako Bagassa</span>
+      <div class="footer-links">
+        <a href="mailto:bakobagassasaratou@gmail.com">Email</a>
+        <a href="https://github.com/bakobagassas" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/resources.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
