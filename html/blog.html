@@ -24,7 +24,7 @@
         <li><a href="resources.html">Resources</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a class="nav-resume-btn" href="assets/resume.pdf" target="_blank" rel="noopener">Download Résumé</a></li>
+        <li><a class="nav-resume-btn" href="../assets/resume.pdf" target="_blank" rel="noopener">Download Résumé</a></li>
       </ul>
     </nav>
   </header>
@@ -36,20 +36,42 @@
       <h1>Moments and Reflections</h1>
     </div>
 
-    <div class="empty-state">
-      <span class="eyebrow">Coming soon</span>
-      <p>
-        This is where regular, shorter entries will live: tech notes, advocacy reflections, conference
-        recaps, travel, whatever is on my mind that week. Reverse-chronological, tagged, not sorted into
-        rigid categories.
-      </p>
-      <div class="tag-row">
-        <span class="tag">tech</span>
-        <span class="tag">advocacy</span>
-        <span class="tag">conferences</span>
-        <span class="tag">travel</span>
-        <span class="tag">reflections</span>
-      </div>
+    <div class="blog-list">
+
+      <article class="blog-post">
+        <details>
+          <summary>
+            <span class="meta blog-post-date">Oct 22, 2026</span>
+            <h3>My Early Experiences with Open Source</h3>
+            <p class="blog-post-teaser">I first heard the term open source on a trip to Red Hat, and then realized I had been using it for years. Halfway through my Open Source Software Development course, here are the three questions I keep asking.</p>
+            <div class="blog-post-tags">
+              <span class="tag">tech</span>
+              <span class="tag">reflections</span>
+            </div>
+          </summary>
+
+          <div class="blog-post-body">
+            <p>The first time I heard of “Open Source” was during a visit to Red Hat as part of the Berea Student Software Development Team Internship trip. I was unfamiliar with the concept and didn't realize I had been an Open Source user since I started college, and perhaps even before. As a computer science major at Berea College, most, if not all, of the books I have used are open-source books from Runestone. Faculty members, as well as so many other students, contributed to those books, and they have genuinely made my student life easier because I did not have to purchase books for those specific classes.</p>
+
+            <p>Now that I am enrolled in the Open Source Software Development (OSSD) course at Berea College, I am getting to reflect and interact more intentionally with open source Softwares, not just as a user, but also as a contributor and a student continuously learning what it actually means. I have been asking myself three main questions since I joined this class.</p>
+
+            <p>First: what makes software open software? Is it simply because anyone who gets to contribute can? Or is it simply because anyone who wants to use that software can freely use it however they want? In the first half of my journey in the OSSD class, I realized that the answer to this question has more layers to it. Anyone who wants to contribute to OSS can, but only under certain conditions. They have to be intentional about the code they push in; for example, it needs to be high quality, and they should not knowingly introduce security flaws. Furthermore, although everyone can technically contribute, it is still at the maintainer’s discretion whether to accept that contribution. Open source is an actual community. When you want to contribute to a project, you will be communicating with at least one person: the maintainer, the reviewers, and other contributors in the Pull Request comments, Issue Queue comments, etc. This aspect of OSS made it feel more real to me as a contributor.</p>
+
+            <p>On the users' side, though, Open Source does not mean people can use the software however they wish. In this class, I learned more about something called licenses. From our class discussions, I understood that licenses are a legal way to communicate to the community how they can use, distribute, or even modify code. Some licenses are more restrictive than others, but they ALL share one thing in common: you have to respect what the license implies. Which, in my opinion, is a great motivation to develop Softwares because developers are sure that their code will be used as intended; they have more control, so they feel safe producing it.</p>
+
+            <p>My second question was: if anyone can contribute to open-source software, then to what extent is that software secure? Since everyone has access to the codebase, they can more easily identify all the security flaws. However, through class discussions with my classmates and professors, I realized that identifying security flaws is not as bad as it initially seems. The only way of correcting something is to first KNOW that it exists. If our software is proprietary, our not noticing the security flaws does not suddenly mean they are gone. Beyond the security aspect, open source has the advantage of diverse volunteers from all backgrounds and identities working on it, which, in my opinion, increases innovation in how issues are solved within the repository because some contributors may notice things differently.</p>
+
+            <p>Which brings me to the last main question I had about open source softwares. Why would a firm want to make software for free? And why would someone want to give out free labor in this economy? I learned that Open source does not always mean free. If the owner of the code decides to sell their product, they are legally allowed to do so, and the licenses they use may also allow others to modify their software and use it for commercial purposes if they wish. However, what about contributors who are not allowed to use the software for commercial purposes? What incentives do they have to volunteer and work for free? This was the easiest question I could answer because I am one of those people.</p>
+
+            <p>An important aspect of this class is the contributions we make toward open-source software. One could argue that I receive credit at the end of the course; hence, I am not volunteering. However, I still consider this volunteering because I could have ‘easily’ chosen another class where I would not have to contribute to softwares. I chose this class not just because I was curious to learn more about open source, but, most importantly, because I was excited to contribute to more projects used by real people. Projects that genuinely bring a positive impact in people’s lives. That knowledge would have been enough for me to contribute to open source beyond just a class requirement.</p>
+
+            <p>So far, I have been working on 2 issues in the Berea College Syllabus Repository through this class: one where my work was merged and another where the work is still ongoing. I will talk about the one that is still ongoing because it is the most challenging and interesting one. It has been taking longer because it involves implementing a feature that lets you search for a course by its name, not just the prefix and course number. At first glance, one might think this is a straightforward issue; however, it has more layers, similar to the answers to the questions I had throughout this class. We did not use to collect course names when users added a course to the repository. Therefore, I have to take that into consideration and be more intentional about how this new feature would fit into the existing code. Which brings me to an important tool we have been using in this class: story points. Story points have been a way for us to take all this into consideration and estimate how much work it would take to solve our issues. However, life does not always go as planned, and we might underestimate or overestimate the work required to close an issue. In my case, I underestimated the work it would take to solve this issue because, when assigning the 5 story points to my issue, I only accounted for the complexity and edge cases I needed to consider. There was one important aspect I underestimated: testing. I will need to not just make sure my changes look good in the UI, but also write test cases for every new function I write and every existing function I modify, which will take more time than expected.</p>
+
+            <p>This case is one of the reasons why our professor introduced the ‘Delta story point' system, which I think is a great tool! It enables us to document how much our story point estimate has changed from when we picked up an issue to when it finally gets merged. In my opinion, it is important to be able to look back and access our initial opinion on the work. The delta story point is helping me notice things I didn't notice before when assessing my work, so I can use it in the future when I need to assess it again. It helps me be a better learner by improving my analysis abilities. We are only halfway through this class, and I cannot wait to see the developer I will become by the end of it.</p>
+          </div>
+        </details>
+      </article>
+
     </div>
 
   </main>
@@ -65,8 +87,8 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/blog.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/blog.js"></script>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
